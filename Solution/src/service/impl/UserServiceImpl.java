@@ -13,10 +13,10 @@ import static constants.ApplicationConstants.PERMISSION_DENIED;
 
 public class UserServiceImpl implements UserService {
 
-    private static UserServiceImpl instance;
+    private static UserService instance;
     private final UserRepository userRepository;
 
-    public static UserServiceImpl getInstance(){
+    public static UserService getInstance(){
         if(instance == null) {
             instance = new UserServiceImpl();
         }
